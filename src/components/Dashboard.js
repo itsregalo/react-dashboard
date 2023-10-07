@@ -1,9 +1,12 @@
 import React from "react";
+import DashboardStatsGrid from "./DashboardStatsGrid";
+import TransactionChart from "./TransactionChart";
 
 export default function Dashboard() {
     return (
-        <div>
-            <h2>Dashboard</h2>
+        <div className="flex flex-col gap-4 w-full">
+            <DashboardStatsGrid />
+            <TransactionChart />
         </div>
     );
 }

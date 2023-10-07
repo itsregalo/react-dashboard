@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./components/shared/Layout";
 import Dashboard from "./components/Dashboard";
 import Products from "./components/Products";
-import Login from "./components/Login";
+import Signup from "./components/auth/Signup";
+import Login from "./components/auth/Login";
 
 function App () {
   return (
@@ -14,6 +15,7 @@ function App () {
           <Route path="products" element={<Products />} />
         </Route>
         <Route path="login" element={<Login />}></Route>
+        <Route path="signup" element={<Signup />}></Route>
       </Routes>
     </Router>
   );
